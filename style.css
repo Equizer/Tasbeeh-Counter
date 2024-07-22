@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+nav {
+  margin-bottom: 25px;
+}
+
+.header {
+  height: 80px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(60, 179, 113);
+  color: white;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+  margin-bottom: 15px;
+}
+
+.add-subtract-button-grid {
+  display: grid;
+  justify-content: center;
+}
+
+.reset-save-button-grid {
+  display: grid;
+  grid-template-columns: 80px 70px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.add-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 200px;
+  border: 2px solid white;
+  overflow: hidden;
+  cursor: pointer;
+  height: 200px;
+  width: 200px;
+  /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [spread radius] [color] [inset]; */
+
+  /* box-shadow:  0px 0px 2px 16px rgba(98, 236, 77, 0.16);
+   */
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
+}
+
+.add-button:hover {
+  background: #F6F9FE;
+
+}
+
+
+.subtract-button {
+  rotate: 180deg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 200px;
+  border: 2px solid white;
+  overflow: hidden;
+  cursor: pointer;
+  height: 120px;
+  width: 120px;
+  position: absolute;
+  margin-top: -60px;
+  margin-left: 30px;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
+}
+
+.display-count {
+  display: grid;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.reset-button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+
+}
+
+.save-button {
+  background-color: rgb(189, 187, 187);
+  color: rgb(255, 255, 255);
+  border: none;
+}
+
+.reset-button,
+.save-button {
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.chevron-up,
+.chevron-down {
+  height: 100%;
+  width: 100%;
+}
+
+.chevron-up {
+  margin-bottom: 3px;
+}
+
+.chevron-down {
+  height: 120px;
+  width: 120px;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(207, 244, 252);
+  border: 2px solid rgb(158, 234, 249);
+  color: rgb(5, 81, 96);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 150px;
+  width: 350px;
+  text-align: center;
+}
+.question-yes, .question-no {
+  padding: 5px ;
+  font-size: 14px;
+}
+
+.question-yes {
+  background-color: rgb(34, 107, 215);
+  color: rgb(255, 255, 255);
+  border: none;
+  width: 50px;
+}
+
+.question-no {
+  background-color: rgb(189, 187, 187);
+  color: rgb(255, 255, 255);
+  border: none;
+  width: 40px;
+}
